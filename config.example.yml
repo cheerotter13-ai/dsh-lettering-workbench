@@ -1,0 +1,10 @@
+# Merge this entry into the selected DSH profile's cordis.patch.yml.
+# Use absolute paths to your OWN data and Python environment.
+- id: lettering-workbench
+  config:
+    pythonPath: python
+    detectionEnabled: false
+    # dataDir: 'YOUR_DATA_DIRECTORY'
+    # photoshopPath: 'YOUR_PHOTOSHOP_EXECUTABLE'
+    # fontManifest: 'YOUR_FONT_MANIFEST_JSON'
+    # modelDir: 'YOUR_DETECTION_MODELS_DIRECTORY'

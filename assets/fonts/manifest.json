@@ -1,0 +1,22 @@
+{
+  "fonts": {
+    "wenkai": {
+      "name": "霞鹜文楷",
+      "path": "LXGWWenKai-Regular.ttf",
+      "license": "OFL-1.1"
+    }
+  },
+  "styles": {
+    "dialogue": "wenkai",
+    "thought": "wenkai",
+    "narration": "wenkai",
+    "sfx": "wenkai",
+    "wenkai": "wenkai"
+  },
+  "fallbacks": {
+    "zh": [],
+    "en": [],
+    "ja": [],
+    "ko": []
+  }
+}

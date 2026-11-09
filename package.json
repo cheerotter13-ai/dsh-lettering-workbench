@@ -1,0 +1,20 @@
+{
+  "name": "dsh-lettering-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local lettering, stickers and Photoshop background editing for DSH",
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": { ".": "./lib/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+  "engines": { "node": ">=22.13.0" },
+  "files": ["lib/", "tools/*.py", "assets/", "requirements.txt", "requirements-detection.txt", "README.md", "THIRD_PARTY_NOTICES.md", "LICENSE-NOTICE.md", "config.example.yml", "cordis.patch.yml"],
+  "scripts": { "test": "node --test test/*.test.js", "check:privacy": "node scripts/check-privacy.js" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-ui-sidebar", "@deepseek-ai/dsh-client-ui-layout"],
+      "platform": "web"
+    }
+  }
+}
